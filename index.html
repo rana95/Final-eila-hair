@@ -18,7 +18,7 @@
     }
 
     header img {
-      https://ibb.co/bRC1qVnr
+      width: 140px;
     }
 
     h1 {
@@ -83,7 +83,7 @@
   <div class="language-switch" onclick="switchLanguage()">English</div>
 
   <header>
-    <img src="https://raw.githubusercontent.com/rana95/Final-eila-hair/main/logo.png" alt="Eila Hair Logo" />
+    <img src="https://i.ibb.co/bRC1qVn/logo.png" alt="Eila Hair Logo" />
     <h1 id="title-fa">مجموعه تخصصی کاشت مو ایلا هیر</h1>
     <p id="desc-fa">
       ایلا هیر، انتخابی مطمئن برای بازگرداندن زیبایی طبیعی شماست.<br />
@@ -92,8 +92,8 @@
     </p>
   </header>
 
-  <img class="promo-image"  https://ibb.co/1fND38ZM
-https://ibb.co/nshxXfVralt="Eila Hair Promo" />
+  <img class="promo-image" src="https://i.ibb.co/v4R43NB/promo1.jpg" alt="Eila Hair Promo 1" />
+  <img class="promo-image" src="https://i.ibb.co/Gv6DCyw/promo2.jpg" alt="Eila Hair Promo 2" />
 
   <div class="below-image-text">
     <strong>سابقه‌ای درخشان از کاشت موی موفق در ایران و عراق</strong><br />
@@ -111,7 +111,7 @@ https://ibb.co/nshxXfVralt="Eila Hair Promo" />
   <script>
     function switchLanguage() {
       const langBtn = document.querySelector('.language-switch');
-      const isFarsi = document.getElementById('title-fa').dir !== 'ltr';
+      const isFarsi = document.body.dir === 'rtl';
 
       if (isFarsi) {
         document.body.dir = 'ltr';
